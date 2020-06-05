@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background-color: #ecf0f1;
+      }
+      .container {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        order: 2;
+        background-color: white;
+        padding: 25px;
+      }
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 25px;
+        color: white;
+      }
+      .flexbg .left {
+        order: 1;
+        background-color: #3498db;
+      }
+      .flexbg .right {
+        order: 3;
+        background-color: #34495e;
+      }
+      /*  태블릿 화면 */
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+        .flexbg .right {
+          order: 3;
+        }
+        /* 모바일 화면 */
+        @media screen and (max-width: 480px) {
+          .flexbg {
+            flex-wrap: wrap;
+          }
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 100%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+        .flexbg .right {
+          order: 3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum qui, in
+          dolor cum culpa doloremque facere fugit placeat at hic nemo nihil
+          numquam blanditiis optio laboriosam repellat animi provident aliquid
+          cumque esse voluptate consectetur nisi earum quod? Culpa voluptatem
+          magni voluptates similique ex quisquam dolorem labore iste nisi
+          quaerat eveniet eius laudantium, tempora adipisci debitis nemo
+          voluptate temporibus voluptatum exercitationem cumque nostrum neque,
+          quibusdam unde soluta! Laudantium placeat officiis quisquam beatae qui
+          expedita molestiae provident consequuntur porro quaerat culpa ut
+          delectus iste, corrupti neque quod ullam ducimus veniam et iure! Nulla
+          earum molestiae magni. Eveniet optio exercitationem architecto quae
+          assumenda.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quaerat
+          fuga libero ad aliquam molestiae doloremque, tempore quis accusantium
+          repellat harum cum placeat praesentium blanditiis esse ducimus!
+          Perspiciatis suscipit id voluptatem nobis! Recusandae corrupti est
+          molestias repellendus? Fugit beatae possimus dolorum exercitationem
+          dolor ipsum fuga omnis explicabo! Alias dignissimos, iste ipsa qui
+          rerum ab tempora veritatis. Dicta, assumenda illum quia fugit, sequi
+          sed aut quasi mollitia blanditiis doloribus maiores explicabo rerum
+          neque sunt itaque, ipsa excepturi iusto quam unde. Sapiente sequi odio
+          impedit sit architecto facilis pariatur rem corrupti, necessitatibus,
+          autem deleniti atque suscipit reiciendis blanditiis. Consectetur qui
+          harum placeat.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>You might have some latest posts here on the left</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>You might have some latest posts here on the right</p>
+      </aside>
+    </div>
+  </body>
+</html>

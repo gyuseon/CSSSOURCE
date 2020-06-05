@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap; /* 아이템 줄바꿈 */
+        height: 400px;
+        align-content: space-around;
+        border: 2px solid;
+      }
+      /* 
+      display : flex
+      flex-direction : row(기본); => 아이템 진행 방향
+      flex-wrap : no-wrap(기본); => 아이템 줄바꿈
+      align-content: stretch;(기본) => 교차축의 정렬 방법(flex-wrap::-wrap
+      이어야 의미가 있으며, 여백이 있는 경우만 동작)
+      align-items : stretch;(기본) => 한 줄 일떄 정렬 방법
+
+      flex-flow : row wrap;(flex-direction 과 flex-wrap 한꺼번에 쓰는 경우)
+      
+       */
+      .container .box {
+        width: 100px;
+        height: 100px;
+        border: 4px dashed;
+        font-size: 40px;
+        display: flex;
+        justify-content: center; /* 가로 정렬 */
+        align-items: center; /* 세로 정렬 */
+      }
+      .container div:first-child {
+        background-color: red;
+      }
+      .container div:nth-child(2) {
+        background-color: blue;
+      }
+      .container div:nth-child(3) {
+        background-color: blueviolet;
+      }
+      .container div:nth-child(4) {
+        background-color: aqua;
+      }
+      .container div:last-child {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+      <div class="box">box4</div>
+      <div class="box">box5</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur,
+      incidunt nisi ratione voluptas quis esse, iure minima amet sequi nulla
+      quibusdam eum, at in ipsam laudantium aspernatur optio impedit. Commodi?
+    </p>
+  </body>
+</html>

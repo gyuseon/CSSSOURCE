@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        /* rem() */
+        font-size: 12px;
+      }
+      body {
+        /* em() */
+        font-size: 13px;
+      }
+      .box {
+        background-color: slateblue;
+        margin-bottom: 10px;
+      }
+      .box_px {
+        width: 160px;
+        height: 160px;
+      }
+      .box_em {
+        width: 10em;
+        height: 10em;
+      }
+      .box_rem {
+        width: 10rem;
+        height: 10rem;
+      }
+      p {
+        background-color: tan;
+        font-size: 1em;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- px : 고정값(화면 해상도에 영향을 받음)
+           % : 부모 요소에 영향을 받음
+           em : 자기 자신의 font size에 영향을 받음
+           rem : 조상 태그의 font size에 영향을 받음
+           vw, vh : viewport 기준으로 width, height 설정
+    -->
+    <h1>CSS 기본 문법</h1>
+    <h2>단위</h2>
+    <div class="wrapper">
+      <div class="box box_px">PX</div>
+      <div class="box box_em">EM</div>
+      <div class="box box_rem">REM</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam commodi
+      vero quaerat, dolore dolor saepe atque. Reprehenderit recusandae enim iure
+      quam nemo? Repudiandae labore exercitationem obcaecati est cum iure
+      expedita sapiente possimus, mollitia quam laborum fugiat non eveniet
+      error? Velit perspiciatis consequuntur similique beatae, laborum impedit
+      tempora tenetur expedita praesentium dolorum sint culpa ducimus aliquid
+      obcaecati nisi optio voluptatem nesciunt natus vel exercitationem nostrum
+      pariatur porro incidunt cumque. Quos modi voluptate minus nam assumenda
+      fugit explicabo excepturi a reiciendis nostrum laboriosam enim neque
+      alias, eum pariatur placeat quas ab suscipit dicta ullam, molestias
+      corrupti quam numquam. Eligendi assumenda eius architecto.
+    </p>
+  </body>
+</html>
